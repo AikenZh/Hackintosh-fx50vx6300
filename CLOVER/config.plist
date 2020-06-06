@@ -47,13 +47,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					QVpBTA==
-					</data>
+					<data>QVpBTA==</data>
 					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
+					<data>SERFRg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -61,13 +57,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
+					<data>SERBUw==</data>
 					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
+					<data>SERFRg==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -77,21 +69,6 @@
 		</dict>
 		<key>DisableASPM</key>
 		<false/>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
-			</dict>
-		</array>
 		<key>FixHeaders</key>
 		<false/>
 		<key>FixMCFG</key>
@@ -120,18 +97,11 @@
 			<key>NoOemTableId</key>
 			<false/>
 		</dict>
-		<key>SortedOrder</key>
-		<array>
-			<string>SSDT-Pr.aml</string>
-			<string>DSDT.aml</string>
-		</array>
 		<key>smartUPS</key>
 		<false/>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>nv_disable=1</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>Debug</key>
@@ -147,7 +117,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>-1</integer>
+		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -175,6 +145,19 @@
 		<false/>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device-id</key>
+				<data>cJ0AAA==</data>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>layout-id</key>
+				<data>YwAAAA==</data>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family HD Audio Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -184,70 +167,54 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<data>
-				YwAAAA==
-				</data>
+				<data>YwAAAA==</data>
 				<key>model</key>
 				<string>100 Series/C230 Series Chipset Family HD Audio Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AAAbGQ==
-				</data>
+				<data>AAAbGQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
-				<data>
-				GxkAAA==
-				</data>
+				<data>GxkAAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>disable-external-gpu</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con1-busid</key>
+				<data>BAAAAA==</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>CgAAAA==</data>
 				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con2-busid</key>
+				<data>BQAAAA==</data>
 				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-index</key>
-				<data>
-				/////w==
-				</data>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>EgAAAA==</data>
 				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
-				</data>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-portcount</key>
-				<data>
-				AgAAAA==
-				</data>
+				<data>AgAAAA==</data>
 				<key>framebuffer-stolenmem</key>
-				<data>
-				AAAwAQ==
-				</data>
+				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAAAgA==
-				</data>
+				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 530</string>
 			</dict>
@@ -292,7 +259,10 @@
 			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
-		<true/>
+		<dict>
+			<key>Legacy</key>
+			<false/>
+		</dict>
 		<key>Theme</key>
 		<string>Catalina</string>
 	</dict>
@@ -355,7 +325,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
